@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>SmartStudentManager</title>
+</head>
+<body>
+    <h1>My Tasks</h1>
+
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <strong>{{ task.title }}</strong>
+                - Deadline: {{ task.deadline }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
